@@ -13,8 +13,11 @@ API token obtained:
 
 There are two folders created and the structure is:
 Top-N-Problems
+
   |-AllProductsPage.js
+  
   |-App.js
+
   |-ProductCard.js
   |-ProductCard.js
   |-ProductDetailsPage.js
