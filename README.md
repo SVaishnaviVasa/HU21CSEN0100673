@@ -12,19 +12,27 @@ API token obtained:
 
 
 There are two folders created and the structure is:
+
 Top-N-Problems
 
-  |-AllProductsPage.js
+    |-AllProductsPage.js
   
-  |-App.js
+    |-App.js
 
-  |-ProductCard.js
-  |-ProductCard.js
-  |-ProductDetailsPage.js
-  |-ProductList.js
-  |-api.js
-  |-Average-Calculator
-    |-api-info.ts
-    |-server.ts
+    |-ProductCard.js
+  
+    |-ProductCard.js
+  
+    |-ProductDetailsPage.js
+  
+    |-ProductList.js
+  
+    |-api.js
+  
+    |-Average-Calculator
+  
+      |-api-info.ts
+    
+      |-server.ts
 
 (The Top-N-Problems only contains files for reviewing the code. The structure can be accessed from master branch)
