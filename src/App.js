@@ -1,20 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import AllProductsPage from './Pages/AllProductsPage';
-import ProductDetailsPage from './Pages/ProductDetailsPage';
-import { Container } from '@mui/material';
+import products from './data/products.json';  
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Container>
-        <Switch>
-          <Route path="/" exact component={AllProductsPage} />
-          <Route path="/product-details" component={ProductDetailsPage} />
-        </Switch>
-      </Container>
-    </Router>
+    <div>
+      <h1>Top Products</h1>
+      <ul>
+        {products.map((product, index) => (
+          <li key={index}>
+            <h3>{product.productName}</h3>
+            <p>Price: ${product.price}</p>
+            <p>Rating: {product.rating}</p>
+            <p>Discount: {product.discount}%</p>
+            <p>
+              Availability: 
+              {product.availability === 'yes' ? ' In Stock' : ' Out of Stock'}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
-}
+};
 
 export default App;
